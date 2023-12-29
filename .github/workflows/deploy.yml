@@ -45,7 +45,7 @@ jobs:
       - name: Build website
         # See https://discourse.gohugo.io/t/solved-what-should-be-used-for-the-value-of-site-baseurl/5896
         # for why we set baseURL here and not in hugo.toml.
-        run: hugo --noChmod --minify --baseURL="https://github.com/Shadow21AR/testDoc"
+        run: hugo --noChmod --minify --baseURL="https://shadow21ar.github.io/testDoc/"
 
       - name: Setup Pages
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
